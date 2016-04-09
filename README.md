@@ -4,7 +4,7 @@ A tool that provides file encryption operations, "lock" and "unlock." Files are 
 
 ## Dependencies
 
-The current implementation depegates to OpenSSL as shipped on OSX.
+The current implementation delegates to OpenSSL as shipped on OSX.
 
 ## Locking a file
 
