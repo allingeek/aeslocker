@@ -42,3 +42,10 @@ With aeslocker on your PATH, run it with the `unlock` subcommand followed by the
     aeslocker lock ~/.ssh/id_rsa
 
 The user will be prompted for the passphrase on STDIN. Upon successful unlocking the original file will be deleted.
+
+## For the love of composition...
+
+Unlock all of the files in the current working tree:
+
+    aeslocker unlock $(find . -name '*.enc' -print | sed -n 's/^\(.*\)\.enc$/\1/p')
+
