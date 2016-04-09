@@ -39,7 +39,7 @@ Sometimes you want to lock a bunch of files... Well the lock and unlock subcomma
 
 With aeslocker on your PATH, run it with the `unlock` subcommand followed by the paths of target files. **Do not include the `.enc` file suffix.** For example, someone wanting to encrypt their private key (id_rsa) might run:
 
-    aeslocker lock ~/.ssh/id_rsa
+    aeslocker unlock ~/.ssh/id_rsa
 
 The user will be prompted for the passphrase on STDIN. Upon successful unlocking the original file will be deleted.
 
